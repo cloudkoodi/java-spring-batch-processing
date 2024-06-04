@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: csv-to-db
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/batch-processing
+    username: dev
+    password: dev
+  batch:
+    job:
+      enabled: true
+    jdbc:
+      initialize-schema: always
+  data:
+    jdbc:
+      dialect: POSTGRESQL
+
